@@ -1,6 +1,6 @@
 const App = () => {
   return(
-    <div>
+    <div className="text-4xl font-weight: 700 text-blue-400">
       Portfolio App
     </div>
   )

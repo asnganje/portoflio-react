@@ -1,7 +1,11 @@
+import Footer from "./components/Footer";
+import Header from "./components/Header";
+
 const App = () => {
   return(
-    <div className="text-4xl font-weight: 700 text-blue-400">
-      Portfolio App
+    <div>
+      <Header/>
+      <Footer />
     </div>
   )
 }

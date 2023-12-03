@@ -39,7 +39,7 @@ const Header = () => {
                                     size={30}
                                 />
                                 </div>
-                                <div className='absolute top-20 left-5'>
+                                <div className='absolute top-20 left-5 cursor-pointer'>
                                     <ul className='space-y-5'>
                                     {navItems}
                                     </ul>

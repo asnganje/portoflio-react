@@ -31,7 +31,7 @@ const Header = () => {
                     <>
                     {!isMenuOpen && <FaBars onClick={showMenu} className='text-white hover:text-gray-300 focus:outline-none mt-2 cursor-pointer ml-auto' size={30} />}
                     {isMenuOpen && <div className= "fixed inset-0 overflow-y-auto mx-3">
-                            <div className="absolute w-full h-[80vh] space-y-2 bg-black opacity-1 mt-3">
+                            <div className="absolute w-full h-[80vh] space-y-2 bg-black opacity-1.5">
                                 <div className='absolute top-0 right-0'>
                                 <FaX
                                     onClick={hideMenu}

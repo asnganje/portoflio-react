@@ -19,25 +19,36 @@ const Header = () => {
     const navItems = navData.map((item)=> {
         return (<li key={item.id} className="text-white text-xl hover:font-bold">
                 {item.name}
+                <hr className='block lg:hidden w-full'/>
                 </li>)
     })
 
     return(
-        <header className="flex justify-between bg-gray-500 p-4 mx-3">
+        <header className="flex justify-between bg-gray-900 p-4 mt-3 mx-3">
             <h3 className="text-xl font-bold text-white cursor-pointer mb:4 md: mb:0">{identify}</h3>
             {isSmallScreen?
                 (
                     <>
                     {!isMenuOpen && <FaBars onClick={showMenu} className='text-white hover:text-gray-300 focus:outline-none mt-2 cursor-pointer ml-auto' size={30} />}
-                    <div className='flex flex-col items-end'>
-                    {isMenuOpen && <FaX onClick={hideMenu} className='text-white hover:text-gray-300 focus:outline-none mt-2 mb-3 cursor-pointer' size={30} />}
-                    {isMenuOpen && <ul className="flex items-end flex-col space-y-2">
-                    {navItems}
-                    </ul>}
-                    </div>
+                    {isMenuOpen && <div className= "fixed inset-0 overflow-y-auto mx-3">
+                            <div className="absolute w-full h-[80vh] space-y-2 bg-black opacity-1 mt-3">
+                                <div className='absolute top-0 right-0'>
+                                <FaX
+                                    onClick={hideMenu}
+                                    className="text-white text-4xl hover:text-gray-300 mt-5 mx-3 ml-100 focus:outline-none cursor-pointer"
+                                    size={30}
+                                />
+                                </div>
+                                <div className='absolute top-20 left-5'>
+                                    <ul className='space-y-5'>
+                                    {navItems}
+                                    </ul>
+                                </div> 
+                            </div>                        
+                        </div>}
                     </>
                 ):
-                (<ul className="flex flex-wrap space-x-4 cursor-pointer md: space-x-10 md:-mx:10">
+                (<ul className="flex flex-wrap space-x-4 cursor-pointer">
                 {navItems}
                 </ul>)
             }

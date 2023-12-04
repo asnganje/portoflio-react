@@ -11,15 +11,18 @@ const Contact = () => {
                 <form className="flex flex-col space-y-3">
                     <input
                     placeholder="Full name"
+                    autoFocus = {true}
                     className="border border-gray-300 rounded-md p-3 "
                     />
                     <input
                     placeholder="Email"
-                    className="border border-gray-300 rounded-md p-3 "
+                    className="border border-gray-300 rounded-md p-3"
+                    autoFocus = {true}
                     />
                     <textarea
                     placeholder="Hello Mariane. Glad to see you!"
                     className="h-[20vh] border border-gray-300 rounded-md p-3 "
+                    autoFocus = {true}
                     />
                     <button className="border rounded-md w-[30vh] bg-orange-500 p-3 text-white text-2xl hover:bg-orange-300">Get in touch!</button>
                 </form>

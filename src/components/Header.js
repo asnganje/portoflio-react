@@ -24,14 +24,14 @@ const Header = () => {
     })
 
     return(
-        <header className="flex justify-between bg-gray-900 p-4 mt-3 mx-3">
+        <header className="flex justify-between border rounded-md bg-gray-900 p-4 mt-3 mx-3">
             <h3 className="text-xl font-bold text-white cursor-pointer mb:4 md: mb:0">{identify}</h3>
             {isSmallScreen?
                 (
                     <>
                     {!isMenuOpen && <FaBars onClick={showMenu} className='text-white hover:text-gray-300 focus:outline-none mt-2 cursor-pointer ml-auto' size={30} />}
                     {isMenuOpen && <div className= "fixed inset-0 overflow-y-auto mx-3">
-                            <div className="absolute w-full h-[80vh] space-y-2 bg-black opacity-1.5">
+                            <div className="absolute w-full h-full space-y-2 bg-black opacity-1.5">
                                 <div className='absolute top-0 right-0'>
                                 <FaX
                                     onClick={hideMenu}

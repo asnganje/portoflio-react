@@ -18,7 +18,7 @@ const Footer = () => {
         )
     })
     return(
-        <footer className="bg-gray-900 py-4 mx-3 mb-3">
+        <footer className="bg-gray-900 border rounded-md py-4 mx-3 mb-3">
             <div className="container mx-auto flex justify-center">
             <hr/>
                 <ul className="flex space-x-4">

@@ -4,8 +4,8 @@ const Experience = () => {
     const renderedMain = projects.map((item)=> {
                             if(item.id ===1){
                             return (
-                                <div className="flex mt-5">
-                                    <div key = {item.id}><img  className="h-[60vh] w-[350vh]" src={item.icon} alt={item.title} /></div>
+                                <div key = {item.id} className="flex mt-5">
+                                    <div><img  className="h-[60vh] w-[350vh]" src={item.icon} alt={item.title} /></div>
                                     <div className="ml-10">
                                         <h2 className="text-3xl font-bold mb-3 font-sans">{item.title}</h2>
                                         <p className="font-sans text-2xl">{item.description}</p>

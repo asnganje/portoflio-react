@@ -42,7 +42,7 @@ const Intro = ()=> {
             </div>
         </div>):
         (
-            <div className="flex mx-3 bg-black h-[90vh] items-center bg-contain bg-no-repeat bg-right" style={{ backgroundImage: `url(${initialImg})`}}>
+            <div className="flex mx-3 bg-gray-700 h-[90vh] items-center bg-contain bg-no-repeat bg-right" style={{ backgroundImage: `url(${initialImg})`}}>
             <div className="mx-5">
                 <ul className="space-y-5">
                     {renderedSocials}

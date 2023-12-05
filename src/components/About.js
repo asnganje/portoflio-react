@@ -8,7 +8,7 @@ const About = () => {
     const isSmallScreen = useMediaQuery({maxWidth:1115})
     
     return(
-        <div className = "md:grid grid-cols-3 flex flex-col border rounded-md gap-4 mx-3 bg-black">
+        <div className = "md:grid grid-cols-3 flex flex-col border rounded-md gap-4 mx-3 mt-5 bg-gray-500">
             {isSmallScreen? (<div className = "col-span-3 p-5 mb-8">
                 <h3 className="text-6xl font-bold text-orange-500 mb-4">About me</h3>
                 <p className= "text-white text-2xl">Hello I’m a software developer! I can help you build a product , 

@@ -24,7 +24,7 @@ const Header = () => {
     })
 
     return(
-        <header className="flex justify-between border rounded-md bg-gray-900 p-4 mt-3 mx-3">
+        <header className="flex justify-between bg-gray-900 p-4 mx-3">
             <h3 className="text-xl font-bold text-white cursor-pointer mb:4 md: mb:0">{identify}</h3>
             {isSmallScreen?
                 (

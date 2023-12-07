@@ -17,7 +17,7 @@ const Header = () => {
     }
     
     const navItems = navData.map((item)=> {
-        return (<li key={item.id} className="text-white text-xl hover:font-bold">
+        return (<li key={item.id} className="text-white font-mono tracking-tighter text-xl hover:font-bold">
                 {item.name}
                 <hr className='block lg:hidden w-full'/>
                 </li>)
@@ -25,7 +25,7 @@ const Header = () => {
 
     return(
         <header className="flex justify-between bg-gray-900 p-4 mx-3">
-            <h3 className="text-xl font-bold text-white cursor-pointer mb:4 md: mb:0">{identify}</h3>
+            <h3 className="text-xl font-bold font-mono tracking-tighter text-white cursor-pointer mb:4 md: mb:0">{identify}</h3>
             {isSmallScreen?
                 (
                     <>

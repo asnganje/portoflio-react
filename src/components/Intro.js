@@ -49,12 +49,12 @@ const Intro = ()=> {
                 </ul>
             </div>
             <div className="space-y-4">
-                <h1 className="text-orange-500 text-4xl font-bold">Hey There. I’m Nganje</h1>
-                <h3 className="text-white font-bold">I’m a Software Developer</h3>
-                <p className="text-white">
+                <h1 className="text-orange-500 font-mono tracking-tighter text-4xl font-bold">Hey There. I’m Nganje</h1>
+                <h3 className="text-white font-mono tracking-tighter text-2xl font-bold">I’m a Software Developer</h3>
+                <p className="text-white font-mono tracking-tighter text-xl">
                 I can help you build a product , feature or website 
-                Look through some of my work and experience!<br/> If you like what you see and have a project
-                 you need coded, don’t hestitate to contact me.
+                Look through some of my <br/> work and experience! If you like what you see and have a project
+                 you need coded, <br/> don’t hestitate to contact me.
                 </p>
             </div>
         </div>

@@ -25,7 +25,7 @@ const Intro = ()=> {
  
     return(
         <article>
-        {isSmallScreen? (<div className="flex flex-col-reverse mx-3 bg-black h-[50vh] items-center">
+        {isSmallScreen? (<div className="flex flex-col-reverse mx-3 bg-black h-full items-center">
             <div className="mx-5">
                 <ul className="flex space-x-5 mt-8 mb-10">
                     {renderedSocials}

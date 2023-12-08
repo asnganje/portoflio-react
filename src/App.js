@@ -16,9 +16,9 @@ const App = () => {
       <Header />
       <section className="flex-1">
         <Intro/>
-        <Experience/>
-        <About />
-        <Contact/>
+        <Experience id="section1"/>
+        <About id="section2"/>
+        <Contact id="section3"/>
       </section>
       <Footer className="mt-auto" />
     </main>

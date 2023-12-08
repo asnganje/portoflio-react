@@ -6,7 +6,7 @@ const Experience = () => {
     const renderedMain = projects.map((item)=> {
                             if(item.id ===1){
                             return (
-                                <div key = {item.id} className="sm:flex flex-cols mt-5 shadow-lg shadow-gray-400">
+                                <div key = {item.id} className="sm:flex flex-cols shadow-lg shadow-gray-400">
                                     <div><img  className="h-[60vh] w-[350vh] rounded-md" src={item.icon} alt={item.title} /></div>
                                     <div className="ml-10">
                                         <h2 className="text-3xl text-gray-500 font-bold mb-3 tracking-tighter font-mono">{item.title}</h2>
@@ -43,7 +43,7 @@ const Experience = () => {
                         <div className="ml-10">
                                         <h2 className="text-3xl text-gray-700 font-bold tracking-tighter font-mono mb-3">{project.title}</h2>
                                         <p className="font-mono text-gray-600 tracking-tighter text-2xl">{project.description}</p>
-                                        <div className="flex space-x-4 mt-5">
+                                        <div className="flex space-x-4 mt-30">
                                         {
                                             project.skills.map((skill)=> {
                                                 return(
@@ -76,7 +76,7 @@ const Experience = () => {
             </div>
             <div className="h-full">
                 {renderedMain}
-                <div className="sm:grid grid-cols-3 lg:flex lg:flex-cols">
+                <div className="container sm:grid grid-cols-3 lg:flex lg:flex-cols">
                     {renderedOtherProjects}
                 </div>
             </div>

@@ -10,12 +10,12 @@ const Experience = () => {
                                     <div><img  className="h-[60vh] w-[350vh] rounded-md" src={item.icon} alt={item.title} /></div>
                                     <div className="ml-10">
                                         <h2 className="text-3xl text-gray-500 font-bold mb-3 tracking-tighter font-mono">{item.title}</h2>
-                                        <p className="font-mono tracking-tighter text-gray-450 text-2xl">{item.description}</p>
+                                        <p className="font-mono tracking-tighter text-gray-500 text-2xl">{item.description}</p>
                                         <div className="flex space-x-4 mt-5">
                                         {
                                             item.skills.map((skill)=> {
                                                 return(
-                                                    <div key={skill} className="border cursor-pointer font-mono border-black rounded-md w-[80%] p-1 text-black">
+                                                    <div key={skill} className="border cursor-pointer font-mono rounded-md w-[15vh] text-gray-500">
                                                         {skill}
                                                     </div>
                                                 )
@@ -41,8 +41,8 @@ const Experience = () => {
                     return (<div key={project.id} className = "col-span-1 mx-5 mt-8 border rounded-md bg-gray-100">
                         <div>
                         <div className="ml-10">
-                                        <h2 className="text-3xl text-gray-700 font-bold tracking-tighter font-mono mb-3">{project.title}</h2>
-                                        <p className="font-mono text-gray-600 tracking-tighter text-2xl">{project.description}</p>
+                                        <h2 className="text-3xl text-gray-500 font-bold tracking-tighter font-mono mb-3">{project.title}</h2>
+                                        <p className="font-mono text-gray-500 tracking-tighter text-2xl">{project.description}</p>
                                         <div className="flex space-x-4 mt-30">
                                         {
                                             project.skills.map((skill)=> {

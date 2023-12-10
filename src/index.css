@@ -35,7 +35,7 @@
     animation: moveInRight 2s;
   }
 
-  @keyFrames moveInRight1 {
+  @keyFrames moveInLeft {
     0% {
       opacity: 0;
       transform: translateX(100px)
@@ -49,8 +49,8 @@
     }
   }
 
-  .animate-moveInRight1 {
-    animation: moveInRight1 6s
+  .animate-moveInLeft {
+    animation: moveInLeft 6s
   }
 
   @keyFrames moveInRight2 {
@@ -69,4 +69,28 @@
 
   .animate-moveInRight2 {
     animation: moveInRight2 10s
+  }
+
+  @keyFrames rotate {
+    0% {
+      opacity: 0;
+      transform: translateX(-100px) rotate(0deg)
+
+    }
+    60% {
+      transform: rotate(180deg)
+    }
+
+    80% {
+      transform: translateX(10px)
+    }
+
+    100% {
+      opacity: 1;
+      transform: translate(0)
+    }
+  }
+
+  .animate-rotate {
+    animation: rotate 10s
   }

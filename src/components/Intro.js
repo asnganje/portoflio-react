@@ -49,8 +49,8 @@ const Intro = ()=> {
                 </ul>
             </div>
             <div className="space-y-4">
-                <h1 className="text-orange-500 font-mono tracking-tighter text-4xl font-bold animate-moveInRight">Hey There. I’m Nganje</h1>
-                <h3 className="text-white font-mono tracking-tighter text-2xl font-bold animate-moveInRight1">I’m a Software Developer</h3>
+                <h1 className="text-orange-500 font-mono tracking-tighter text-4xl font-bold animate-rotate">Hey There. I’m Nganje</h1>
+                <h3 className="text-white font-mono tracking-tighter text-2xl font-bold animate-moveInLeft">I’m a Software Developer</h3>
                 <p className="text-white font-mono tracking-tighter text-xl animate-moveInRight2">
                 I can help you build a product , feature or website 
                 Look through some of my <br/> work and experience! If you like what you see and have a project

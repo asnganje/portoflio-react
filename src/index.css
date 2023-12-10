@@ -14,3 +14,59 @@
   .animate-blink {
     animation: blink 5s infinite;
   }
+
+  @keyFrames moveInRight {
+    0% {
+      opacity:0;
+      transform: translateX(100px)
+    }
+
+    80% {
+
+    }
+
+    100% {
+      opacity:1;
+      transform: translateX(0)
+    }
+  }
+
+  .animate-moveInRight {
+    animation: moveInRight 2s;
+  }
+
+  @keyFrames moveInRight1 {
+    0% {
+      opacity: 0;
+      transform: translateX(100px)
+    }
+    80%{
+
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0)
+    }
+  }
+
+  .animate-moveInRight1 {
+    animation: moveInRight1 6s
+  }
+
+  @keyFrames moveInRight2 {
+    0% {
+      opacity: 0;
+      transform: translateX(100px)
+    }
+    80%{
+
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0)
+    }
+  }
+
+  .animate-moveInRight2 {
+    animation: moveInRight2 10s
+  }
